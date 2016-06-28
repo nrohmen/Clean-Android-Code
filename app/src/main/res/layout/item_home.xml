@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EEEEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:background="#5000">
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:gravity="top|center"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="338 Hotel"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="top|center"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>
