@@ -1,7 +1,8 @@
 package com.plaps.androidcleancode.networking;
 
+import android.text.TextUtils;
+
 import com.google.gson.Gson;
-import com.plaps.androidcleancode.util.Util;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,7 +16,6 @@ public class NetworkError extends Throwable {
     public static final String DEFAULT_ERROR_MESSAGE = "Something went wrong! Please try again.";
     public static final String NETWORK_ERROR_MESSAGE = "No Internet Connection!";
     private static final String ERROR_MESSAGE_HEADER = "Error-Message";
-    Util util = new Util();
     private final Throwable error;
 
     public NetworkError(Throwable e) {
@@ -42,7 +42,7 @@ public class NetworkError extends Throwable {
         retrofit2.Response<?> response = ((HttpException) this.error).response();
         if (response != null) {
             String status = getJsonStringFromResponse(response);
-            if (!util.isEmpty(status)) return status;
+            if (!TextUtils.isEmpty(status)) return status;
 
             Map<String, List<String>> headers = response.headers().toMultimap();
             if (headers.containsKey(ERROR_MESSAGE_HEADER))
