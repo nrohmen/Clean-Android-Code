@@ -60,7 +60,7 @@ public class HomeActivity extends BaseApp implements HomeView {
     }
 
     @Override
-    public void getityListSuccess(CityListResponse cityListResponse) {
+    public void getCityListSuccess(CityListResponse cityListResponse) {
 
         HomeAdapter adapter = new HomeAdapter(getApplicationContext(), cityListResponse.getData(),
                 new HomeAdapter.OnItemClickListener() {
