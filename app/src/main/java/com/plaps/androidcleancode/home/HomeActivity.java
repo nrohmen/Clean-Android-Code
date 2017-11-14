@@ -36,8 +36,8 @@ public class HomeActivity extends BaseApp implements HomeView {
 
     public  void renderView(){
         setContentView(R.layout.activity_home);
-        list = (RecyclerView) findViewById(R.id.list);
-        progressBar = (ProgressBar) findViewById(R.id.progress);
+        list = findViewById(R.id.list);
+        progressBar = findViewById(R.id.progress);
     }
 
     public void init(){

@@ -28,7 +28,7 @@ public class HomePresenter {
             @Override
             public void onSuccess(CityListResponse cityListResponse) {
                 view.removeWait();
-                view.getityListSuccess(cityListResponse);
+                view.getCityListSuccess(cityListResponse);
             }
 
             @Override

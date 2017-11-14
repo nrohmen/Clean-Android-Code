@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidCleanCode.iml" filepath="$PROJECT_DIR$/AndroidCleanCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clean-Android-Code.iml" filepath="$PROJECT_DIR$/Clean-Android-Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

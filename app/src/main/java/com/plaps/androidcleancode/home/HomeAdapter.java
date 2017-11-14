@@ -45,8 +45,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
         Glide.with(context)
                 .load(images)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .skipMemoryCache(true)
                 .into(holder.background);
 
     }
@@ -68,9 +66,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            tvCity = (TextView) itemView.findViewById(R.id.city);
-            tvDesc = (TextView) itemView.findViewById(R.id.hotel);
-            background = (ImageView) itemView.findViewById(R.id.image);
+            tvCity = itemView.findViewById(R.id.city);
+            tvDesc = itemView.findViewById(R.id.hotel);
+            background = itemView.findViewById(R.id.image);
 
         }
 
