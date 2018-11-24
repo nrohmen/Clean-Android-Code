@@ -8,7 +8,6 @@ buildscript {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.3"
 
     defaultConfig {
         applicationId "com.plaps.androidcleancode"
@@ -48,6 +47,9 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.5'
     provided 'javax.annotation:jsr250-api:1.0'
     provided 'org.glassfish:javax.annotation:10.0-b28'
+
+    //Mockito
+    testImplementation 'org.mockito:mockito-core:2.15.0'
 
 
 }
